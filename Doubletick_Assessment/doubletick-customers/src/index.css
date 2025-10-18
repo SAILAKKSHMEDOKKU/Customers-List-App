@@ -1,0 +1,260 @@
+body {
+  font-family: Inter, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* HEADER LAYOUT */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Top row: Logo */
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  width: 200px;
+  height: 60px;
+}
+
+/* Divider line */
+.header-divider {
+  border-bottom: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+/* Middle row: All Customers + count */
+.customers-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.count {
+  background-color: #e5f7ee;
+  color: #0d6830;
+  border-radius: 10px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 700; 
+}
+
+/* Bottom row: Search + Filters side by side */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.searchbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px 10px;
+  flex: 0 0 250px; 
+}
+
+.searchbar img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.searchbar input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.filter-dropdown button {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Table container */
+.table-container {
+  height: 600px;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 2;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #d8d8d8;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+th:hover {
+  background-color: #fafafa;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+tr:hover {
+  background: #f9fafb;
+}
+
+.customer-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.customer-cell img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.phone {
+  color: #888;
+  font-size: 12px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  margin-top: 5px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #f5f5f5;
+}
+
+
+
+
+
+/* Divider line after Logo */
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;  
+  padding-bottom: 10px;           
+}
+
+/* Divider line after "All Customers" count */
+.customers-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 1px solid #ddd;  /* Divider line below count */
+  padding-bottom: 8px;             /* Space below count */
+}
+
+/* Table container */
+.table-container {
+  height: 600px;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  margin-top: 20px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table header row color (light gray) */
+thead {
+  position: sticky;
+  top: 0;
+  background-color: #f5f5f5; /* light gray */
+  z-index: 2;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+th:hover {
+  background-color: #eaeaea; /* Slightly darker on hover */
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+tr:hover {
+  background: #f9fafb;
+}
+
+/* Other existing styles remain unchanged */
